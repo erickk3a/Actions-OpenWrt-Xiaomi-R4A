@@ -18,10 +18,13 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 sed -i '$a src-git adguardhome https://github.com/rufengsuixing/luci-app-adguardhome' feeds.conf.default
 # sed -i '$a src-git dnsfilter https://github.com/garypang13/luci-app-dnsfilter' feeds.conf.default
 
-# 添加插件源码
+# 添加插件源码passwall
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+
 #PassWall插件
-git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
-# passwall依赖
+#lede/package$下运行 或者openwrt/package$下运行
+#git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+
+# passwall依赖git clone https://github.com/kenzok8/openwrt-packages.git
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
