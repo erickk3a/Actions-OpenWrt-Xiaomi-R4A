@@ -34,4 +34,5 @@ sed -i 's/ssid=OpenWrt/ssid=Xiaomi_R4A/g' package/kernel/mac80211/files/lib/wifi
 # 修改默认wifi密码key为Xiaomi_R4A
 #sed -i 's/key=password/key=Xiaomi_R4A/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
+# https://www.right.com.cn/forum/thread-4049403-1-1.html
 # git clone https://github.com/liuran001/openwrt-packages package
